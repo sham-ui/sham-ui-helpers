@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`setField 1`] = `
+Object {
+  "Options": Object {
+    "value": "Hi!",
+  },
+  "html": "
+ Value: Hi!
+ <input><!--0-->
+",
+}
+`;
+
+exports[`setField 2`] = `
+Object {
+  "Options": Object {
+    "value": "Hello!",
+  },
+  "html": "
+ Value: Hello!
+ <input><!--0-->
+",
+}
+`;
+
+exports[`toggleField 1`] = `
+Object {
+  "Options": Object {
+    "toggled": true,
+  },
+  "html": " Toggled: true<button>Toggle!</button><!--0-->",
+}
+`;
+
+exports[`toggleField 2`] = `
+Object {
+  "Options": Object {
+    "toggled": false,
+  },
+  "html": " Toggled: false<button>Toggle!</button><!--0-->",
+}
+`;

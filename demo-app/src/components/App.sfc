@@ -1,0 +1,44 @@
+{% import Toggler from './Toggler.sfc' %}
+{% import Input from './Input.sfc' %}
+
+<template>
+    <main>
+        <pre>
+            Helpers for sham-ui
+        </pre>
+        <p>
+            <dl>
+                <dt>Toggled: {{toggled}}</dt>
+                <dd>
+                    <Toggler
+                            onClick={{this$.toggleField( $.toggled )}}
+                    />
+                </dd>
+            </dl>
+        </p>
+        <p>
+            <dl>
+                <dt>Value: {{value}}</dt>
+                <dd>
+                    <Input
+                        onChanged={{this$.setField( $.value )}}
+                    />
+                </dd>
+            </dl>
+
+        </p>
+    </main>
+</template>
+
+<script>
+    import { ToggleField, SetField } from '../../../src/index';
+
+    function App( options ) {
+        options( {
+            [ $.toggled ]: false,
+            [ $.value ]: ''
+        } );
+    }
+
+    export default Component( ToggleField, SetField, Template, App );
+</script>

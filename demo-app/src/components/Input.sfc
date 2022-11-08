@@ -1,0 +1,17 @@
+<template>
+    <input :oninput={{this$.handleInput}} />
+</template>
+
+<script>
+    function Input( options ) {
+        const onChanged = $();
+
+        const state = options( {
+            [ onChanged ]() {}
+        } );
+
+        this$.handleInput = e => state[ onChanged ]( e.target.value );
+    }
+
+    export default Component( Template, Input );
+</script>

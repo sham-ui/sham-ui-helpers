@@ -1,0 +1,13 @@
+<template>
+    <button :onclick={{onClick}}>Toggle!</button>
+</template>
+
+<script>
+    function Toggler( options ) {
+        options( {
+            [ $.onClick ]() {}
+        } );
+    }
+
+    export default Component( Template, Toggler );
+</script>
