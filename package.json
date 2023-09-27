@@ -4,7 +4,7 @@
   "author": "Eugeny Burnashov <shamcode@gmail.com>",
   "main": "index.js",
   "module": "index.module.js",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "license": "MIT",
   "scripts": {
     "start": "MACRO_REF_REPLACE=enabled rollup -w -c ./demo-app/rollup.config.js",
